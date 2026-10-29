@@ -7,9 +7,6 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-section {
-    color: #243746;
-}
 
 /* Logo */
 .logo {
@@ -18,22 +15,9 @@ section {
     object-fit: cover;
 }
 
-/* Book Now Button */
-.book-button {
-    background-color: #00a6c7;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.book-button:hover {
-    background-color: #007c99;
-}
-
 /* Main Section */
 section {
+    color: #243746;
     padding: 30px;
 }
 
@@ -89,7 +73,7 @@ section {
 }
 
 .destination-card:hover .destination-image img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Image Overlay */
@@ -113,7 +97,7 @@ section {
     margin: 0;
 }
 
-/* Destination Details */
+/* Destination Card Details */
 .card-content {
     padding: 20px;
     color: #243746;
@@ -137,10 +121,131 @@ section {
     padding: 10px 16px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.6s ease;
 }
 
 .explore-button:hover {
-    background-color: #00a6c7;
+    background-color: #07c3e9;
 }
 
+/* Home Button */
+.home-button {
+    background-color: #00a6c7;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #007c99;
+}
+
+/* Explore Page Destination Details */
+.destination-details {
+    padding: 40px 30px;
+    background-color: #f4f8fb;
+    text-align: center;
+}
+
+.destination-details > h1 {
+    color: #0b3d5c;
+    font-size: 32px;
+}
+
+.destination-info {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Explore Page Images */
+.destination-info img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.destination-info h2,
+.destination-info h3 {
+    color: #0b3d5c;
+}
+
+.destination-info li {
+    margin-bottom: 8px;
+}
+
+/* Book Now Section */
+.plan-trip {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e3f3f8;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+.plan-trip h2 {
+    color: #0b3d5c;
+    font-size: 30px;
+}
+
+.plan-trip p {
+    color: #243746;
+    margin-bottom: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #0b3d5c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Tablet Screens */
+@media (max-width: 900px) {
+    .destination-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Phone Screens */
+@media (max-width: 600px) {
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-details {
+        padding: 25px 15px;
+    }
+
+    .destination-info {
+        padding: 15px;
+    }
+
+    .destination-info img {
+        height: 220px;
+    }
+
+    .logo {
+        width: 200px;
+        height: auto;
+    }
+
+    header {
+        padding: 10px;
+    }
+}
