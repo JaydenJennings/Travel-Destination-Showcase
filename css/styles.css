@@ -15,6 +15,24 @@ header {
     object-fit: cover;
 }
 
+<<<<<<< HEAD
+=======
+/* Book Now Button */
+.home-button {
+    background-color: #00a6c7;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+     transition: background-color 0.6s ease;
+}
+
+.home-button:hover {
+    background-color: #07c3e9;
+}
+
+>>>>>>> 4cb9cde0da7abe529f991781c71f835c4c6fb482
 /* Main Section */
 section {
     color: #243746;
@@ -27,12 +45,7 @@ section {
     background-color: #f4f8fb;
 }
 
-#destinations h2 {
-    text-align: center;
-    color: #0b3d5c;
-    font-size: 32px;
-    margin-bottom: 30px;
-}
+
 
 /* Destination Grid */
 .destination-grid {
